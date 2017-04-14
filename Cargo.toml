@@ -15,7 +15,7 @@ daemonize = "^0.2.3"
 rpassword = "^0.3"
 
 [dependencies.librespot]
-git = "https://github.com/plietar/librespot.git"
+git = "https://github.com/Aika0/librespot.git"
 default-features = false
 features = ["with-syntex", "with-tremor"]
 

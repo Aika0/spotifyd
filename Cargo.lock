@@ -5,7 +5,7 @@ dependencies = [
  "ctrlc 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "daemonize 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "getopts 0.2.14 (registry+https://github.com/rust-lang/crates.io-index)",
- "librespot 0.1.0 (git+https://github.com/plietar/librespot.git)",
+ "librespot 0.1.0 (git+https://github.com/Aika0/librespot.git)",
  "log 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "rpassword 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "rust-ini 0.10.0 (git+https://github.com/zonyitoo/rust-ini.git)",
@@ -277,7 +277,7 @@ dependencies = [
 [[package]]
 name = "librespot"
 version = "0.1.0"
-source = "git+https://github.com/plietar/librespot.git#aa499e0189541750496c9fd520997937789c84c0"
+source = "git+https://github.com/Aika0/librespot.git#aa499e0189541750496c9fd520997937789c84c0"
 dependencies = [
  "alsa 0.0.1 (git+https://github.com/plietar/rust-alsa)",
  "bit-set 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -290,7 +290,7 @@ dependencies = [
  "json_macros 0.3.1 (git+https://github.com/plietar/json_macros)",
  "lazy_static 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "libpulse-sys 0.0.0 (git+https://github.com/astro/libpulse-sys)",
- "librespot-protocol 0.1.0 (git+https://github.com/plietar/librespot.git)",
+ "librespot-protocol 0.1.0 (git+https://github.com/Aika0/librespot.git)",
  "linear-map 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "lmdb-rs 0.7.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -317,7 +317,7 @@ dependencies = [
 [[package]]
 name = "librespot-protocol"
 version = "0.1.0"
-source = "git+https://github.com/plietar/librespot.git#aa499e0189541750496c9fd520997937789c84c0"
+source = "git+https://github.com/Aika0/librespot.git#aa499e0189541750496c9fd520997937789c84c0"
 dependencies = [
  "protobuf 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -1207,8 +1207,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum libc 0.2.19 (registry+https://github.com/rust-lang/crates.io-index)" = "9e030dc72013ed68994d1b2cbf36a94dd0e58418ba949c4b0db7eeb70a7a6352"
 "checksum liblmdb-sys 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b56d07dcf983f9b6679f768df73c72671d0087bd66329baabb63325f4f592677"
 "checksum libpulse-sys 0.0.0 (git+https://github.com/astro/libpulse-sys)" = "<none>"
-"checksum librespot 0.1.0 (git+https://github.com/plietar/librespot.git)" = "<none>"
-"checksum librespot-protocol 0.1.0 (git+https://github.com/plietar/librespot.git)" = "<none>"
+"checksum librespot 0.1.0 (git+https://github.com/Aika0/librespot.git)" = "<none>"
+"checksum librespot-protocol 0.1.0 (git+https://github.com/Aika0/librespot.git)" = "<none>"
 "checksum linear-map 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "8f947d2a0ca958037e42a430bc7ea4369f97b60a2002bd927b84404509cc64cf"
 "checksum lmdb-rs 0.7.3 (registry+https://github.com/rust-lang/crates.io-index)" = "da5a6654b1d6ed38bed1ed96f601c719b9caacad2f5ff63afc1eb7d6c0011c2b"
 "checksum log 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)" = "ab83497bf8bf4ed2a74259c1c802351fcd67a65baa86394b6ba73c36f4838054"
