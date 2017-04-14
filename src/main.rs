@@ -26,11 +26,27 @@ use librespot::audio_backend::{BACKENDS, Sink};
 use librespot::authentication::get_credentials;
 
 use daemonize::Daemonize;
+use std::process; // AJF - Added for Panic Hook
 
 mod config;
 mod cli;
 
+const VERSION: &'static str = env!("CARGO_PKG_VERSION"); // AJF - Get version from Cargo metadata
+
 fn main() {
+    // AJF - Added to catch a panic, print an error and REALLY EXIT!
+    panic::set_hook(Box::new(|panic_info| {
+        error!("Caught panic with message: {}",
+               match (panic_info.payload().downcast_ref::<String>(),
+                      panic_info.payload().downcast_ref::<&str>()) {
+                   (Some(s), _) => &**s,
+                   (_, Some(&s)) => s,
+                   _ => "Unknown error type, can't produce message.",
+               });
+        process::exit(1);
+    }));
+
+
     let opts = cli::command_line_argument_options();
     let args: Vec<String> = std::env::args().collect();
 
@@ -49,6 +65,12 @@ fn main() {
 
     if matches.opt_present("help") {
         println!("{}", cli::usage(&args[0], &opts));
+        exit(0);
+    }
+
+    // AJF - So we can get the version.
+    if matches.opt_present("version") {
+        println!("{}", VERSION);
         exit(0);
     }
 
